@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAZON PRIME</title>
+    <style>
+        .navbar {
+            font-size: larger;
+            background-color: #37475A;
+            border: 2px solid black;
+            margin-bottom: 5px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .c0 {
+            color: white;
+            float: left;
+            list-style: none;
+            margin: auto;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .c{
+            color: white;
+        }
+
+        input {
+            background-color: #37475A;
+        }
+
+        ::placeholder {
+            color: black;
+            background-color: #37475A;
+            font-size: larger;
+            border: #37475A;
+        }
+
+        .cover {
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://vertexbazaar.com/wp-content/uploads/2022/04/amazon-prime-video-banner.jpg);
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 100%;
+            height: 300px;
+        }
+
+        .c1 {
+            border: 2px solid black;
+            height: 100px;
+            margin: 3px;
+        }
+
+        .trending {
+            display: grid;
+            grid-template-columns: repeat(8, auto);
+        }
+
+        .c2 {
+            border: 2px solid black;
+            height: 100px;
+            margin: 3px;
+        }
+
+        .movies {
+            display: grid;
+            grid-template-columns: repeat(8, auto);
+        }
+
+        .c3 {
+            border: 2px solid black;
+            height: 100px;
+            margin: 3px;
+        }
+
+        .webseries {
+            display: grid;
+            grid-template-columns: repeat(8, auto);
+        }
+
+        #it1 {
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTino3FL1BCFDnQJ7LrSEurAmnZvaU5zm90aQ&usqp=CAU);
+        }
+
+        #it2 {
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR01Vi0UzczjlMvjLTyBKAfRk1ScEkwXOrLiKPnW22H8nA3S3JDWq5-EkjL8eeCMKPCYSE&usqp=CAU);
+        }
+
+        #it3 {
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTofYFIo13rOk7Xd4uuoDgfxC-CYxRDrXDQPA&usqp=CAU);
+        }
+
+        #it4 {
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShqUYFLlwDibjjzL-8DenqvX132Pmff3DeRQ&usqp=CAU);
+        }
+
+        #it5 {
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdPRU6y0Mz17Vo7DtBnBl8STdA62gOIyqSK-pCK9OW5QLp3XekUZR_T7GVx1YkdLRwCWs&usqp=CAU);
+        }
+
+        #it6 {
+            
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuR3SYVI7yMZ6zc2EMaBp5Dv6bLZDtkBgpoQ&usqp=CAU);
+        }
+
+        #it7 {
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWnFNUcX9OnSQzcOMWPpm7OAjvTfQcxDDcGg&usqp=CAU);
+        }
+
+        #it8 {
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOltXWaQbG3t63lkPObHPOpYMHJOSYpX8k-XQ7zsRBlyPQqIpuz-bZKmll2I5dE55xhXo&usqp=CAU);
+        }
+
+        #im1 {
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpIUtY-Il9uGoOYb9vmOhRGwgjePPDezoqKQ&usqp=CAU);
+        }
+
+        #im2 {
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqs1-mHCakA8TAltcMuLmZULjYw4MPIdXB5w&usqp=CAU);
+        }
+
+        #im3 {
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNyh6dBEzP8ecL5KbFR8uO-mrRQ9zU3dxqjQ&usqp=CAU);
+        }
+
+        #im4 {
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRj863OK5mKMMBUrNX-uBWW2_ur018Pvn_fw&usqp=CAU);
+        }
+
+        #im5 {
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5EmQWyo5qDTCkDxdb0jOzRMIVydevgQaB9g&usqp=CAU);
+        }
+
+        #im6 {
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuTIYmGEq_IDxetRTKHl7iaRdkXIc80cWqCw&usqp=CAU);
+        }
+
+        #im7 {
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ZpQxJ2VBDNN8yJf_NHEk6CVDIvRJeDvYm3_rQdvWOOIH4_j_cNK4EaM057j0DaKfk9E&usqp=CAU);
+        }
+
+        #im8 {
+            background-position: center;
+            background-size: contain;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKC65-Q2QMncyFzMrgXHOvJLFG2_RIKsPNw0eqlwPn958Hmlcd0wqq0XKXpZZYg7COm6s&usqp=CAU);
+        }
+
+        #iw1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGolnSi0OnmMyWV-Uj5iYv9KwnaiYfoF5itA&usqp=CAU);
+        }
+
+        #iw2 {
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSuajMGTWGM06SUVW8jo8Rcf8oeRoxijgunQ&usqp=CAU);
+        }
+
+        #iw3 {
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuMYGxqHVAk14JlIL3Wun9frQQ88ijlaPy7ZIDeIk7WgTEzARIcaUcXKVhq6jxlzWiCco&usqp=CAU);
+        }
+
+        #iw4 {
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYbKNHyrhpTyN2UiXtlMR8Xfd119G8ZLZJttNusmuSWU3xTIVLC20lJyZ9CHDMj0chBt4&usqp=CAU);
+        }
+
+        #iw5 {
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://wallpaperaccess.com/full/513135.jpg);
+        }
+
+        #iw6 {
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcXkLJK95mUUECIbqkjAbBHLzJBAiklOo5_tvNEaaBv1TQ7XD2E6T8rrbMPc3e8SA0kvQ&usqp=CAU);
+        }
+
+        #iw7 {
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZjBi4_mA3gWWkV2q0OVNXGzfGGD6F9RymAw&usqp=CAU);
+        }
+
+        #iw8 {
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://wallpaper-house.com/data/out/12/wallpaper2you_585207.jpg);
+        }
+    </style>
+</head>
+
+<body bgcolor="#232F3E">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="c0" id="i1"><b>prime video</b></li>
+                <li class="c0" id="i2"><select name="home">
+                        <option value="HOME" selected>Home</option>
+                        <option value="All">All</option>
+                        <option value="Movies">Movies</option>
+                        <option value="TV Shows">TV Shows</option>
+                    </select></li>
+                <li class="c0" id="i2"><select name="store">
+                        <option value="All" selected>All</option>
+                        <option value="Rent">Rent</option>
+                        <option value="Channel">Channels</option>
+                    </select></li>
+                <li class="c0" id="i3">Live TV</li>
+                <li class="c0" id="i4"><select name="categories">
+                        <option value="Categories" selected>Categories</option>
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Romantic">Romantic</option>
+                        <option value="Thriller">Thriller</option>
+                    </select></li>
+                <li class="c0" id="i2"><select name="EN">
+                        <option value="English" selected>EN</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="German">German</option>
+                        <option value="Italic">Italic</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Korean">Korean</option>
+                    </select></li>
+                <div class="c0"><input type="text" placeholder="Try for free"></div>
+            </ul>
+        </nav>
+    </header>
+    <div class="cover"></div>
+    <h2 class="c"><b>TRENDING</b></h2>
+    <div class="trending">
+        <div class="c1" id="it1"></div>
+        <div class="c1" id="it2"></div>
+        <div class="c1" id="it3"></div>
+        <div class="c1" id="it4"></div>
+        <div class="c1" id="it5"></div>
+        <div class="c1" id="it6"></div>
+        <div class="c1" id="it7"></div>
+        <div class="c1" id="it8"></div>
+    </div>
+    <h2 class="c"><b>MOVIES</b></h2>
+    <div class="movies">
+        <div class="c2" id="im1"></div>
+        <div class="c2" id="im2"></div>
+        <div class="c2" id="im3"></div>
+        <div class="c2" id="im4"></div>
+        <div class="c2" id="im5"></div>
+        <div class="c2" id="im6"></div>
+        <div class="c2" id="im7"></div>
+        <div class="c2" id="im8"></div>
+    </div>
+    <h2 class="c"><b>WEB SERIES</b></h2>
+    <div class="webseries">
+        <div class="c3" id="iw1"></div>
+        <div class="c3" id="iw2"></div>
+        <div class="c3" id="iw3"></div>
+        <div class="c3" id="iw4"></div>
+        <div class="c3" id="iw5"></div>
+        <div class="c3" id="iw6"></div>
+        <div class="c3" id="iw7"></div>
+        <div class="c3" id="iw8"></div>
+    </div>
+</body>
+
+</html>
